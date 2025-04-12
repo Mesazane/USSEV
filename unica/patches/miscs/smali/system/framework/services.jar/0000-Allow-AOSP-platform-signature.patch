@@ -1,5 +1,5 @@
 diff --git a/smali_classes2/com/android/server/pm/InstallPackageHelper.smali b/smali_classes2/com/android/server/pm/InstallPackageHelper.smali
-index 1e7af4d1..7e413524 100644
+index 1e7af4d1..a0d81bbe 100644
 --- a/smali_classes2/com/android/server/pm/InstallPackageHelper.smali
 +++ b/smali_classes2/com/android/server/pm/InstallPackageHelper.smali
 @@ -34,6 +34,8 @@
@@ -124,12 +124,12 @@ index 1e7af4d1..7e413524 100644
 +
 +    move-result-object v7
 +
-+    invoke-static {p0, v3, v4, v7}, Lcom/android/server/pm/ScanPackageUtils;->setFreshSignature(Lcom/android/internal/pm/parsing/pkg/ParsedPackage;Lcom/android/server/pm/pkg/AndroidPackage;[Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)V
++    invoke-static {v15, v3, v4, v7}, Lcom/android/server/pm/ScanPackageUtils;->setFreshSignature(Lcom/android/internal/pm/parsing/pkg/ParsedPackage;Lcom/android/server/pm/pkg/AndroidPackage;[Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)V
 +
      goto :goto_19
  
      :cond_1a
-@@ -23557,6 +23631,20 @@
+@@ -23557,6 +23631,26 @@
      check-cast v7, Landroid/content/pm/SigningDetails;
  
      invoke-interface {v15, v7}, Lcom/android/internal/pm/parsing/pkg/ParsedPackage;->setSigningDetails(Landroid/content/pm/SigningDetails;)Lcom/android/internal/pm/parsing/pkg/ParsedPackage;
@@ -142,11 +142,17 @@ index 1e7af4d1..7e413524 100644
 +
 +    iget-object v6, v0, Lcom/android/server/pm/InstallPackageHelper;->mFreshPlatformSignature:[Landroid/content/pm/Signature;
 +
++    invoke-interface {v7}, Landroid/content/pm/parsing/result/ParseResult;->getResult()Ljava/lang/Object;
++
++    move-result-object v7
++
++    check-cast v7, Landroid/content/pm/SigningDetails;
++
 +    invoke-virtual {v7}, Landroid/content/pm/SigningDetails;->getSignatures()[Landroid/content/pm/Signature;
 +
 +    move-result-object v7
 +
-+    invoke-static {p0, v5, v6, v7}, Lcom/android/server/pm/ScanPackageUtils;->setFreshSignature(Lcom/android/internal/pm/parsing/pkg/ParsedPackage;Lcom/android/server/pm/pkg/AndroidPackage;[Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)V
++    invoke-static {v15, v5, v6, v7}, Lcom/android/server/pm/ScanPackageUtils;->setFreshSignature(Lcom/android/internal/pm/parsing/pkg/ParsedPackage;Lcom/android/server/pm/pkg/AndroidPackage;[Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)V
      :try_end_5
      .catchall {:try_start_5 .. :try_end_5} :catchall_6
  
