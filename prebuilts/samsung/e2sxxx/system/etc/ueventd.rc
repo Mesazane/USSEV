@@ -23,11 +23,6 @@ subsystem sound
 subsystem dma_heap
    devname uevent_devpath
    dirname /dev/dma_heap
-
-subsystem vfio
-    devname uevent_devpath
-    dirname /dev/vfio
-
 # ueventd can only set permissions on device nodes and their associated
 # sysfs attributes, not on arbitrary paths.
 #
@@ -48,7 +43,6 @@ subsystem vfio
 /dev/binder               0666   root       root
 /dev/hwbinder             0666   root       root
 /dev/vndbinder            0666   root       root
-/dev/vfio/*               0666   root       root
 
 /dev/pmsg0                0222   root       log
 /dev/dma_heap/system      0444   system     system
@@ -72,7 +66,6 @@ subsystem vfio
 /dev/mtp_usb              0660   root       mtp
 /dev/usb_accessory        0660   root       usb
 /dev/tun                  0660   system     vpn
-/dev/hidraw*              0660   system     system
 
 # CDMA radio interface MUX
 /dev/ppp                  0660   radio      vpn
@@ -93,6 +86,9 @@ subsystem vfio
 # Big Hammer
 /dev/wbrc        0660 bluetooth bluetooth
 
+# CNSS
+/sys/class/devcoredump/devcd*    data    0660    wifi     system
+
 # parallel_restorecon_dir
 # Never include the "/sys/devices/platform/soc/1d84000.ufshc" path
 parallel_restorecon_dir /sys
@@ -106,10 +102,3 @@ parallel_restorecon_dir /sys/firmware/devicetree
 parallel_restorecon_dir /sys/devices/virtual
 parallel_restorecon_dir /sys/devices/platform
 parallel_restorecon_dir /sys/devices/platform/soc
-
-# CNSS
-/sys/class/devcoredump/devcd*    data    0660    wifi     system
-
-# system input
-/dev/input/event*	0660	system	input
-

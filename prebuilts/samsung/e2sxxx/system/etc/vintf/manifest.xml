@@ -1,8 +1,9 @@
 <!--
     Input:
         system/libhidl/vintfdata/manifest.xml
+        vendor/samsung/frameworks/interfaces/security/ucm/crypto/1.0/manifest.xml
 -->
-<manifest version="8.0" type="framework">
+<manifest version="7.0" type="framework">
     <hal format="hidl" max-level="6">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
@@ -17,12 +18,12 @@
         <name>android.frameworks.sensorservice</name>
         <fqname>ISensorManager/default</fqname>
     </hal>
-    <hal format="hidl" max-level="8">
+    <hal format="hidl">
         <name>android.frameworks.sensorservice</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ISensorManager/default</fqname>
     </hal>
-    <hal format="hidl" max-level="8">
+    <hal format="hidl">
         <name>android.hidl.memory</name>
         <transport arch="32+64">passthrough</transport>
         <fqname>@1.0::IMapper/ashmem</fqname>
@@ -41,6 +42,11 @@
         <name>netutils-wrapper</name>
         <version>1.0</version>
     </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.frameworks.security.ucm.crypto</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISehUcmKeystore/default</fqname>
+    </hal>
     <system-sdk>
         <version>29</version>
         <version>30</version>
@@ -48,6 +54,5 @@
         <version>32</version>
         <version>33</version>
         <version>34</version>
-        <version>35</version>
     </system-sdk>
 </manifest>

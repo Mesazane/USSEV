@@ -1,51 +1,55 @@
 <!--
     Input:
         device/samsung/essi/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/security/engmode/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/security/vaultkeeper/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/security/hdcp/wifidisplay/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/sysinput/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/external/sem/hidl/1.0/framework_compatibility_matrix.xml
+        vendor/samsung/external/sem/secure_element/1.2/framework_compatibility_matrix.xml
+        vendor/samsung/external/skpm/hidl/1.0/framework_compatibility_matrix.xml
         vendor/samsung/interfaces/media/converter/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/security/widevine/keyprov/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/security/engmode/aidl/framework_compatibility_matrix.xml
         vendor/samsung/interfaces/tlc/ddar/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/hyper/aidl/framework_compatibility_matrix.xml
         vendor/samsung/interfaces/wifi/aidl/framework_compatibility_matrix.xml
         vendor/samsung/interfaces/wifi/nan/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/hyper/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/thermal/1.0/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/vibrator/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/tlc/hdm/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/tlc/payment/1.0/tlc_payment_compatibility_matrix.xml
-        vendor/samsung/interfaces/tlc/iccc/1.0/vendor.samsung.hardware.tlc.iccc@1.0-matrix.xml
-        vendor/samsung/interfaces/tlc/mpos_tui/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/tlc/blockchain/1.0/tlc_blockchain_compatibility_matrix.xml
-        vendor/samsung/interfaces/tlc/kg/aidl/vendor.samsung.hardware.tlc.kg-matrix.xml
-        vendor/samsung/interfaces/audio/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/system/security/drk/drk_hidl_framework_compatibility_matrix.xml
-        vendor/samsung/system/security/drk/drk_aidl_framework_compatibility_matrix.xml
-        vendor/samsung/system/security/skeymaster/common/configs/skeymint_v300_framework_compatibility_matrix.xml
-        vendor/samsung/system/security/skeymaster/common/configs/strongbox_qc_km_v300_framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/tlc/ucm/aidl/vendor.samsung.hardware.tlc.ucm-matrix.xml
         vendor/samsung/interfaces/authfw/1.0/vendor.samsung.hardware.authfw@1.0-matrix.xml
         vendor/samsung/interfaces/authfw/aidl/vendor.samsung.hardware.authfw-matrix.xml
         vendor/samsung/interfaces/biometrics/face/aidl/face_compatibility_matrix.xml
         vendor/samsung/interfaces/biometrics/fingerprint/3.0/fingerprint_compatibility_matrix.xml
-        vendor/samsung/external/fingerprint/fingerprint_nontz_compatibility_matrix.xml
-        vendor/samsung/interfaces/frcmc/aidl/vendor.samsung.hardware.frcmc-matrix.xml
-        vendor/samsung/interfaces/security/hermes/aidl/hermes_framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/sysinput/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/tlc/kg/aidl/vendor.samsung.hardware.tlc.kg-matrix.xml
+        vendor/samsung/system/security/skeymaster/common/configs/skeymint_v300_framework_compatibility_matrix.xml
+        vendor/samsung/system/security/skeymaster/common/configs/strongbox_qc_km_v300_framework_compatibility_matrix.xml
+        vendor/samsung/system/security/drk/drk_hidl_framework_compatibility_matrix.xml
+        vendor/samsung/system/security/drk/drk_aidl_framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/tlc/payment/1.0/tlc_payment_compatibility_matrix.xml
+        vendor/samsung/interfaces/tlc/blockchain/1.0/tlc_blockchain_compatibility_matrix.xml
+        vendor/samsung/interfaces/tlc/iccc/1.0/vendor.samsung.hardware.tlc.iccc@1.0-matrix.xml
+        vendor/samsung/interfaces/tlc/mpos_tui/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/tlc/snap/1.0/vendor.samsung.hardware.tlc.snap@1.0-matrix.xml
+        vendor/samsung/interfaces/tlc/hdm/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/hyper/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/thermal/1.0/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/light/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/vibrator/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/audio/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/security/widevine/keyprov/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/security/widevine/keyprov/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/security/hdcp/wifidisplay/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/tlc/ucm/aidl/vendor.samsung.hardware.tlc.ucm-matrix.xml
         vendor/samsung/interfaces/security/wsm/service/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/security/vaultkeeper/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/security/hermes/aidl/hermes_framework_compatibility_matrix.xml
         vendor/samsung/interfaces/security/fkeymaster/aidl/fkeymaster_framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/security/rtts/aidl/framework_compatibility_matrix.xml
         vendor/samsung/interfaces/security/ssu/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/security/rtts/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/frcmc/aidl/vendor.samsung.hardware.frcmc-matrix.xml
         vendor/samsung/frameworks/av/media/vendor/mpp/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/security/sem/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/security/skpm/aidl/framework_compatibility_matrix.xml
         vendor/samsung/interfaces/bluetooth/audio/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/bluetooth/aidl/framework_compatibility_matrix.xml
-        vendor/samsung/interfaces/snap/aidl/framework_compatibility_matrix.xml
+        vendor/samsung/interfaces/gnss/aidl/aidl_manifest/framework_compatibility_matrix_gnss_aidl_IGnssV3_ISehGnssV3.xml
+        vendor/samsung/interfaces/snap/aidl/secure_device_framework_compatibility_matrix.xml
         vendor/samsung/interfaces/nfc/aidl/device_framework_compatibility_matrix.xml
         vendor/samsung/hardware/ril/URC/fcm/radio_framework_compatibility_matrix.xml
 -->
-<compatibility-matrix version="8.0" type="framework">
+<compatibility-matrix version="7.0" type="framework">
     <hal format="aidl" optional="true">
         <name>android.hardware.biometrics.face</name>
         <interface>
@@ -53,18 +57,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.biometrics.fingerprint</name>
+    <hal format="hidl" optional="false">
+        <name>android.hardware.bluetooth</name>
+        <version>1.1</version>
         <interface>
-            <name>IFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <version>2</version>
-        <interface>
-            <name>IFingerprint</name>
+            <name>IBluetoothHci</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -91,10 +88,31 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>android.hardware.gnss</name>
+        <version>3</version>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>android.hardware.graphics.extension.composer3</name>
-        <version>1-2</version>
         <interface>
             <name>ICustomComposer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
+        <interface>
+            <name>ILights</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
+        <interface>
+            <name>ILights</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -134,6 +152,14 @@
             <instance>slot2</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.secure_element</name>
+        <version>1.2</version>
+        <interface>
+            <name>ISecureElement</name>
+            <instance>eSE1</instance>
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.security.keymint</name>
         <version>3</version>
@@ -150,49 +176,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.egistec.hardware.fingerprint</name>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.egistec_optical.hardware.fingerprint</name>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-        <interface>
-            <name>IGoodixFingerprintDaemon</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.goodix.hardware.biometrics.fingerprint.cap</name>
-        <interface>
-            <name>IGoodixFingerprintDaemon</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.qti.hardware.fingerprint</name>
-        <interface>
-            <name>IQfpExtendedFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.audio</name>
+        <version>1.0</version>
         <interface>
-            <name>ISecAudioHal</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ISecEffectFactory</name>
+            <name>ISehDevicesFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -219,23 +207,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung.hardware.bluetooth</name>
-        <interface>
-            <name>ISehBluetooth</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl" optional="false">
         <name>vendor.samsung.hardware.bluetooth</name>
         <version>2.0</version>
-        <interface>
-            <name>ISehBluetooth</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung.hardware.bluetooth</name>
         <interface>
             <name>ISehBluetooth</name>
             <instance>default</instance>
@@ -257,6 +231,28 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.gnss</name>
+        <interface>
+            <name>ISlsiGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.gnss</name>
+        <interface>
+            <name>ISlsiGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.gnss</name>
+        <version>3</version>
+        <interface>
+            <name>ISehGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.hyper</name>
         <version>2</version>
         <interface>
@@ -265,6 +261,14 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.hyper</name>
+        <version>2</version>
+        <interface>
+            <name>ISehHyPer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="false">
         <name>vendor.samsung.hardware.keymint</name>
         <version>1-3</version>
         <interface>
@@ -272,7 +276,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="aidl" optional="false">
         <name>vendor.samsung.hardware.keymint</name>
         <version>1-3</version>
         <interface>
@@ -296,7 +300,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.media.mpp</name>
-        <version>5</version>
+        <version>3</version>
         <interface>
             <name>ISehMppStore</name>
             <instance>default</instance>
@@ -389,13 +393,6 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.samsung.hardware.radio.satellite</name>
-        <interface>
-            <name>ISehRadioSatellite</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.radio.sim</name>
         <interface>
             <name>ISehRadioSim</name>
@@ -454,15 +451,17 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.security.sem</name>
+        <version>1.0</version>
         <interface>
             <name>ISehSem</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.security.skpm</name>
+        <version>1.0</version>
         <interface>
             <name>ISehSkpm</name>
             <instance>default</instance>
@@ -490,6 +489,13 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.security.widevine.keyprov</name>
+        <interface>
+            <name>ISehWidevineKeyProv</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.security.wsm.service</name>
         <interface>
             <name>ISehWsm</name>
@@ -498,10 +504,11 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.snap</name>
-        <version>3</version>
+        <version>2</version>
         <interface>
             <name>ISehSnap</name>
             <instance>default</instance>
+            <instance>secsnap</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
@@ -548,7 +555,6 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.tlc.kg</name>
-        <version>2</version>
         <interface>
             <name>ISehKg</name>
             <instance>default</instance>
@@ -559,6 +565,14 @@
         <version>1.0</version>
         <interface>
             <name>ISehTlcPayment</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.snap</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehSnapSec</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -604,13 +618,6 @@
         <version>1.0</version>
         <interface>
             <name>ISbwcDecompService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung_slsi.hardware.SbwcDecompServiceAidl</name>
-        <interface>
-            <name>ISbwcDecompServiceAidl</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -669,9 +676,8 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>vendor.samsung_slsi.hardware.epic</name>
-        <version>1.0</version>
         <interface>
             <name>IEpicRequest</name>
             <instance>default</instance>
@@ -714,20 +720,6 @@
         <version>2.1</version>
         <interface>
             <name>IOfiService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung_slsi.hardware.sthal_notifier</name>
-        <interface>
-            <name>INotifier</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung_slsi.hardware.sthal_notifier</name>
-        <interface>
-            <name>INotifier</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -779,16 +771,6 @@
             <instance>sced0</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung_slsi.telephony.hardware.oemservice</name>
-        <interface>
-            <name>IOemService</name>
-            <instance>dm0</instance>
-            <instance>dm1</instance>
-            <instance>pst</instance>
-            <instance>sced0</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.samsung_slsi.telephony.hardware.radio</name>
         <version>1.1</version>
@@ -829,23 +811,9 @@
             <instance>rilExternal</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung_slsi.telephony.hardware.radioExternal</name>
-        <interface>
-            <name>IOemSlsiRadioExternal</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.trustonic.tee</name>
         <version>1.1</version>
-        <interface>
-            <name>ITee</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.trustonic.tee</name>
         <interface>
             <name>ITee</name>
             <instance>default</instance>
@@ -859,13 +827,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.trustonic.tui</name>
-        <interface>
-            <name>ITui</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <sepolicy>
         <kernel-sepolicy-version>30</kernel-sepolicy-version>
         <sepolicy-version>29.0</sepolicy-version>
@@ -874,7 +835,6 @@
         <sepolicy-version>32.0</sepolicy-version>
         <sepolicy-version>33.0</sepolicy-version>
         <sepolicy-version>34.0</sepolicy-version>
-        <sepolicy-version>202404</sepolicy-version>
     </sepolicy>
     <avb>
         <vbmeta-version>1.0</vbmeta-version>

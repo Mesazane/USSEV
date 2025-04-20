@@ -5,7 +5,7 @@
         out/soong/.intermediates/kernel/configs/r/android-4.19/kernel_config_r_4.19/matrix_kernel_config_r_4.19.xml
         out/soong/.intermediates/kernel/configs/r/android-5.4/kernel_config_r_5.4/matrix_kernel_config_r_5.4.xml
 -->
-<compatibility-matrix version="8.0" type="framework" level="5">
+<compatibility-matrix version="7.0" type="framework" level="5">
     <hal format="hidl" optional="true">
         <name>android.hardware.atrace</name>
         <version>1.0</version>
@@ -312,18 +312,8 @@
         <version>1.0-1</version>
         <interface>
             <name>IComponentStore</name>
-            <instance>software</instance>
             <regex-instance>default[0-9]*</regex-instance>
             <regex-instance>vendor[0-9]*_software</regex-instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.media.c2</name>
-        <version>1.0</version>
-        <interface>
-            <name>IConfigurable</name>
-            <instance>default</instance>
-            <instance>software</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -402,7 +392,6 @@
         <interface>
             <name>ISap</name>
             <instance>slot1</instance>
-            <instance>slot2</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
