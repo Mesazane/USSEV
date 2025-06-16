@@ -1,9 +1,9 @@
 From 56aee0030a469c82fcbad641b714ea2566573568 Mon Sep 17 00:00:00 2001
-From: Ocin4ever <85343782+Ocin4ever@users.noreply.github.com>
+From: Salvo Giangreco <giangrecosalvo9@gmail.com>
 Date: Sat, 8 Mar 2025 22:42:46 +0100
 Subject: [PATCH] Disable-SAK-in-DarManagerService
 
-Co-Authored-By: Salvo Giangreco <giangrecosalvo9@gmail.com>
+Signed-off-by: Ocin4ever <85343782+Ocin4ever@users.noreply.github.com>
 diff --git a/smali/com/android/server/knox/dar/DarManagerService.smali b/smali/com/android/server/knox/dar/DarManagerService.smali
 index 54c9cc717..5e6e1b564 100644
 --- a/smali/com/android/server/knox/dar/DarManagerService.smali

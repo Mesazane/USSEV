@@ -63,14 +63,6 @@ APPLY_SMALI_PATCHES()
         local COMMIT_NAME
         COMMIT_NAME="$(grep "^Subject:" "$patch" | sed 's/.*PATCH] //')"
 
-        if [[ "$patch" == *"0000-"* ]]; then
-            if $ROM_IS_OFFICIAL; then
-                [[ "$patch" == *"AOSP"* ]] && continue
-            else
-                [[ "$patch" == *"UNICA"* ]] && continue
-            fi
-        fi
-
         echo "Applying \"$COMMIT_NAME\" to $TARGET"
         OUT="$(patch -p1 -s -t -N --dry-run < "$patch")" \
             || echo "$OUT" | grep -q "Skipping patch" || false
