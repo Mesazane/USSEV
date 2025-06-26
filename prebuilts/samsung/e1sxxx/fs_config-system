@@ -4,6 +4,7 @@ system/bin/bootanimation 0 2000 755 capabilities=0x0
 system/bin/surfaceflinger 0 2000 755 capabilities=0x0
 system/lib64 0 0 755 capabilities=0x0
 system/lib64/libgui.so 0 0 644 capabilities=0x0
+system/lib64/libui.so 0 0 644 capabilities=0x0
 system/media 0 0 755 capabilities=0x0
 system/media/battery_error.spi 0 0 644 capabilities=0x0
 system/media/battery_lightning_fast.spi 0 0 644 capabilities=0x0

@@ -1,14 +1,15 @@
-From b9236d6d4896e182381d55c33882933b9008bdf2 Mon Sep 17 00:00:00 2001
+From ca12043587bcb41586bec0d096e168c6510acae1 Mon Sep 17 00:00:00 2001
 From: ExtremeXT <75576145+ExtremeXT@users.noreply.github.com>
-Date: Sat, 26 Apr 2025 20:24:58 +0300
+Date: Sat, 21 Jun 2025 20:37:20 +0200
 Subject: [PATCH] Nuke Knox HDM version
 
+Signed-off-by: Ocin4ever <85343782+Ocin4ever@users.noreply.github.com>
 ---
- .../samsung/android/knox/hdm/HdmManager.smali | 38 +------------------
- 1 file changed, 2 insertions(+), 36 deletions(-)
+ .../samsung/android/knox/hdm/HdmManager.smali | 40 ++-----------------
+ 1 file changed, 3 insertions(+), 37 deletions(-)
 
 diff --git a/smali_classes4/com/samsung/android/knox/hdm/HdmManager.smali b/smali_classes4/com/samsung/android/knox/hdm/HdmManager.smali
-index b9ef6f35..96fdaaa7 100644
+index 89468d9d34..fec2433412 100644
 --- a/smali_classes4/com/samsung/android/knox/hdm/HdmManager.smali
 +++ b/smali_classes4/com/samsung/android/knox/hdm/HdmManager.smali
 @@ -35,7 +35,7 @@
@@ -57,13 +58,14 @@ index b9ef6f35..96fdaaa7 100644
 -    goto :goto_0
 -
 -    :cond_0
--    const-string v0, "2.0"
-+    const/4 v0, 0x0
- 
+-    const-string v0, "2.0 - 95"
+-
 -    :goto_0
++    const/4 v0, 0x0
++    
      return-object v0
  .end method
  
 -- 
-2.45.2
+2.43.0
 

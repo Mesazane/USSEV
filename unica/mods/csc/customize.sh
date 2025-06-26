@@ -25,7 +25,7 @@ SET_CSC_FEATURE_CONFIG()
 echo "Patching CSC model"
 SOURCE_MODEL=$(echo -n "$SOURCE_FIRMWARE" | cut -d "/" -f 1)
 TARGET_MODEL=$(echo -n "$TARGET_FIRMWARE" | cut -d "/" -f 1)
-find "$WORK_DIR/optics" -type f -exec sed -i "s/SAOMC_${SOURCE_MODEL}/SAOMC_${TARGET_MODEL}/g" {} +
+find "$WORK_DIR/optics" -type f -exec sed -i "s/SAOMC_SM-S938B/SAOMC_${TARGET_MODEL}/g" {} +
 
 echo "Patching CSC Features"
 while read -r FILE; do

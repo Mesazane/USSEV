@@ -1,8 +1,12 @@
-# A56 VOLD/MDF blobs
+# A26 VOLD/MDF blobs
 ADD_TO_WORK_DIR "a26xxx" "system" "."
 
 # Tab S10 FE android_server blobs
 ADD_TO_WORK_DIR "gts10fewifixx" "system" "."
+
+# S25 AIDL ICCC blobs
+ADD_TO_WORK_DIR "pa3qxxx" "system" "system/lib64/aidl_comm_iccc_client.so"
+ADD_TO_WORK_DIR "pa3qxxx" "system" "system/lib64/vendor.samsung.hardware.tlc.iccc-V3-ndk.so"
 
 # KnoxGuard
 DELETE_FROM_WORK_DIR "system" "system/priv-app/KnoxGuard"
@@ -22,14 +26,14 @@ DELETE_FROM_WORK_DIR "system" "system/etc/sysconfig/preinstalled-packages-com.sa
 DELETE_FROM_WORK_DIR "system" "system/lib64/libtlc_blockchain_comm.so"
 DELETE_FROM_WORK_DIR "system" "system/lib64/libtlc_blockchain_keystore.so"
 DELETE_FROM_WORK_DIR "system" "system/lib64/libtlc_blockchain_direct_comm.so"
-DELETE_FROM_WORK_DIR "system" "system/lib64/vendor.samsung.hardware.tlc.blockchain-V1-ndk.so"
+DELETE_FROM_WORK_DIR "system" "system/lib64/vendor.samsung.hardware.tlc.blockchain@1.0.so"
 SET_FLOATING_FEATURE_CONFIG "SEC_FLOATING_FEATURE_FRAMEWORK_SUPPORT_BLOCKCHAIN_SERVICE" --delete
 
 # Payment
 DELETE_FROM_WORK_DIR "system" "system/lib64/libtlc_payment_direct_comm.so"
 DELETE_FROM_WORK_DIR "system" "system/lib64/libtlc_payment_spay.so"
 DELETE_FROM_WORK_DIR "system" "system/lib64/libtlc_payment_comm.so"
-DELETE_FROM_WORK_DIR "system" "system/lib64/vendor.samsung.hardware.tlc.payment-V1-ndk.so"
+DELETE_FROM_WORK_DIR "system" "system/lib64/vendor.samsung.hardware.tlc.payment@1.0.so"
 
 # MPOS
 DELETE_FROM_WORK_DIR "system" "system/etc/permissions/privapp-permissions-com.samsung.android.knox.mpos.xml"

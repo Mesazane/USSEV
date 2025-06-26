@@ -86,7 +86,7 @@ A big thanks goes to the following for their invaluable contributions in no part
 - **[Ocin4Ever](https://github.com/Ocin4Ever)** for a lot of help especially on smali, advice and emotional support :D
 - **[Igor](https://github.com/BotchedRPR)** for getting me into porting, teaching me the basics, and emotional support down the road
 - **[Halal Beef](https://github.com/halal-beef)** for lk3rd, testing and misc help
-- **Emad** for help with S10-specific fixes
+- **[Emad](https://github.com/emadhamid7)** for help with S10-specific fixes
 - **[Duhan](https://github.com/duhansysl)** for help with vendor backports, a lot of fixes and advice
 - **[Anan](https://github.com/ananjaser1211)** for all of his contributions to OneUI porting
 - **[CiprianDinca](https://github.com/CiprianDinca9)** for custom ExtremeROM ringtones
@@ -104,6 +104,7 @@ A big thanks goes to the following for their invaluable contributions in no part
 - **[Renox](https://github.com/renoxtv)** for overlay patches and testing
 - **[Ksawlii](https://github.com/Ksawlii)** for FOD animation patch
 - **[nalz0](https://github.com/nalz0)** for Multi-User support
+- **[Oskar](https://github.com/osrott61-gh), [Mesazane](https://github.com/Mesazane)** for Building alot before we started using actions
 - **@april865** (TG) for ExtremeROM Nexus banner
 
 Original UN1CA credits:
